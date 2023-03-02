@@ -26,10 +26,10 @@ h1 {
   background-image: url("https://assets.codepen.io/5525772/blobbob.png");
   filter: drop-shadow(30px 10px 4px #0f2f0dc1);
   bottom: 0;
-  animation: movit 10s ease-in-out infinite;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 2s linear;
 }
 
 @keyframes movit {
