@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="88.520149mm"
+   height="70.80098mm"
+   viewBox="0 0 88.520149 70.80098"
+   version="1.1"
+   id="svg5"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs2">
+    <filter
+       inkscape:menu-tooltip="In and out glow with a possible offset and colorizable flood"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Cutout Glow"
+       style="color-interpolation-filters:sRGB"
+       id="filter517"
+       x="-0.1192725"
+       y="-0.13715205"
+       width="1.2873453"
+       height="1.3303915">
+      <feOffset
+         dy="3"
+         dx="3"
+         id="feOffset507" />
+      <feGaussianBlur
+         stdDeviation="3"
+         result="blur"
+         id="feGaussianBlur509" />
+      <feFlood
+         flood-color="rgb(0,0,0)"
+         flood-opacity="1"
+         result="flood"
+         id="feFlood511" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite"
+         id="feComposite513" />
+      <feBlend
+         in="blur"
+         in2="composite"
+         mode="normal"
+         id="feBlend515" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-60.74032,-72.283125)">
+    <path
+       id="path234"
+       style="fill:#f80202;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;filter:url(#filter517)"
+       d="m 129.55794,110.61586 c 0,7.94589 -0.74372,16.18847 -7.17407,14.50884 -8.1179,-2.12041 -18.24871,0.98728 -24.203246,5.87919 -9.152268,7.51899 -10.910483,-11.65853 -19.733238,-8.42788 -16.738182,6.12907 -8.173774,-12.40082 -8.173773,-20.34671 2e-6,-15.891762 7.578135,-28.485387 31.377317,-20.388017 7.29559,2.482233 14.68306,3.220703 19.73323,8.427879 5.05018,5.207175 8.17378,12.400818 8.17378,20.346698 z"
+       sodipodi:nodetypes="ssssssss"
+       transform="matrix(1.1185306,0,0,0.99564203,-7.2110194,0.61281284)" />
+  </g>
+</svg>
