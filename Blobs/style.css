@@ -18,6 +18,11 @@ h1 {
   background-color: slategray;
   border-bottom: 4px solid black;
 }
+#where {
+  text-align: center;
+  margin-block: auto;
+  color: white;
+}
 .blob {
   position: absolute;
   width: 300px;
@@ -30,20 +35,4 @@ h1 {
   justify-content: center;
   align-items: center;
   transition: 2s linear;
-}
-
-@keyframes movit {
-  0% {
-    transform: translateX(0px);
-  }
-  20%,
-  80% {
-    transform: translateX(400px) translateY(-300px) rotate(90deg);
-    border-radius: 45% 45% 40% 30% / 20% 30% 40% 20%;
-  }
-
-  55% {
-    transform: translateX(600px) rotate(270deg);
-    border-radius: 20% 20% 20% 30% / 20% 30% 20% 20%;
-  }
 }
