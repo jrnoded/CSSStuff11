@@ -17,7 +17,12 @@ html {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-
+#score {
+  font-size: 1.25rem;
+}
+#results {
+  padding: 2rem;
+}
 button {
   padding: 2rem;
   border-radius: 2rem;
