@@ -7,6 +7,7 @@ const columns = document.getElementById("container").children;
 let presses = 0;
 let empties = 12;
 let attempts = 0;
+showScore();
 
 runButton.addEventListener("click", () => {
   let nthChild = randomNumber(0, 11);
@@ -32,7 +33,7 @@ runButton.addEventListener("click", () => {
   }
   column.innerHTML += column.style.background;
   runButton.style.background = colorSelection;
-  score.innerHTML = `Presses: ${presses.toString().padStart(2,'0')} Empty columns: ${empties} `;
+   showScore();
   if (empties === 0) {
     appendResults();
   }
@@ -55,3 +56,8 @@ function appendResults() {
   attempts += 1;
   results.innerHTML += `<p>Attempt ${attempts} took ${presses} clicks to fill all columns`;
 }
+function showScore() {
+  score.innerHTML = `Presses: ${presses.toString().padStart(2,'0')} Empty columns: ${empties} `;
+}
+
+
