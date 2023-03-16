@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+
+
+
+* {
+	--txtclr: hsl(120, 100%, 25%);
+}
+
+body {
+	height: 100vh;
+	margin: 0;
+	display: grid;
+	place-items: center;
+	font-family: sans-serif;
+	font-size: 1.8rem;
+	background-image: radial-gradient(
+		hsla(60, 77%, 71%, 0.561),
+		hsla(97, 100%, 25%, 0.5)
+	);
+}
+
+legend {
+	text-transform: uppercase;
+	font-family: "Rampart One", sans-serif;
+	color: var(--txtclr);
+	text-shadow: 3px 6px 9px hsla(0, 40%, 10%, 0.4);
+}
+
+fieldset {
+	/* 	background: hsl(0, 0%, 100%); */
+	border-radius: 20px;
+	transform: skew(-10deg);
+	box-shadow: 4px 4px 8px hsla(0, 10%, 10%, 0.5);
+}
+
+input {
+	transform: scale(1.75);
+	accent-color: var(--txtclr);
+}
+
+input + label {
+	font-family: "Rampart One", sans-serif;
+	padding-inline: 10px;
+}
+
+input[type="radio"]:checked + label {
+	background: hsla(129, 98%, 47%, 0.749);
+	border-radius: 10px;
+	text-shadow: 3px 6px 9px hsla(0, 0%, 98%, 0.607);
+	outline: 2px solid var(--txtclr);
+}
