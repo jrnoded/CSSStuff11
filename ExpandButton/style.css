@@ -34,6 +34,7 @@ body {
   font-size: 2.5rem;
   border-radius: 1rem;
   background: transparent;
+  border-color: white;
   animation: expanding-animation 4s infinite;
 
   /* transform:translate(50%,50%); */
