@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expand Button</title>
+  </head>
+  <body>
+    <div id="button-container">
+      <div class="splat">
+        <img id="image" src="splat1.svg" alt="" />
+        <button id="button" type="button" >
+          Click Me
+        </button>
+      </div>
+    </div>
+    <script>
+      const button = document.getElementById("button");
+      const image = document.getElementById("image")
+      button.addEventListener("click", buttonClick);
+      function buttonClick() {
+       image.classList.toggle("activate");
+      }
+    </script>
+  </body>
+</html>
