@@ -26,6 +26,7 @@ body {
   position: absolute;
   font-family: inherit;
   text-shadow: 3px 3px 6px hsla(0, 0%, 0%, 0.56);
+  box-shadow: 3px 3px 6px hsla(0,0%,0%,0.56);
   top: calc(285px / 2);
   left: calc(215px / 2);
   width: 200px;
@@ -56,6 +57,11 @@ body {
   opacity: 1;
   transform: rotate(0deg);
 }
+
+cite{
+  color: hsl(0, 0%, 40%);
+}
+
 @keyframes expanding-animation {
   0% {
     transform: scale(1);
