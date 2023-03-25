@@ -3,6 +3,7 @@
   initial-value: 0deg;
   inherits: false;
 }
+
 :root {
   --clr-1: #052b2f;
   --clr-2: #073438;
@@ -19,6 +20,7 @@ body {
   color: white;
   font-family: sans-serif;
 }
+
 .card {
   height: 60vh;
   aspect-ratio: 1 / 1.5;
@@ -26,13 +28,16 @@ body {
   border-radius: 0.5rem;
   position: relative;
 }
+
 .card p {
   padding: 1rem 2rem;
   text-align: justify;
 }
+
 .card p a {
   color: inherit;
 }
+
 .card::before,
 .card::after {
   content: "";
@@ -50,14 +55,22 @@ body {
   border-radius: inherit;
   animation: rotation 5s linear infinite;
 }
+
 .card::after {
   filter: blur(3.5rem);
+}
+
+.explain {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 @keyframes rotation {
   0% {
     --gradient-angle: 0deg;
   }
+
   100% {
     --gradient-angle: 360deg;
   }
