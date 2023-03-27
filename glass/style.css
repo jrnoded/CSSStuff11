@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #000;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.5) 50%, black 0)
+      top / 100% 20%;
+  }
+  
+  .card {
+    color: black;
+    height: 70vh;
+    aspect-ratio: 1 / 1.5;
+    border: 1px solid white;
+    background: rgba(255,255,255,.6);
+    backdrop-filter: var(--filter);
+    border-radius: 5rem;   
+    box-shadow: 10px 10px 10px 10px hsla(0,0%,9%, 0.35),
+    inset 5px 5px 60px 30px hsla(319, 72%, 77%, 0.76);
+      position: relative;
+  }
+  .credit {
+    margin: 2rem auto;
+    width: 70%;
+    aspect-ratio: 1 / .75;
+    background: purple;
+    border-radius: 3rem;
+    backdrop-filter: var(--filter);
+  }
+  
