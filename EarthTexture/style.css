@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(0, 43%, 42%);
+    padding: .625rem;
+    font-family: 'Architects Daughter', cursive;
+}
+
+header h1 {
+    padding-block: 1rem;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.cement,
+.earth,
+.tree {
+    height: 100px;
+    background-repeat: repeat;
+    transition: 1.5s linear;
+
+}
+.tree {
+    color: white;
+    height: 200px;
+    background-image: url("https://assets.codepen.io/5525772/treeabove.png");
+}
+.wall {
+    height: 350px;
+    background-image: url("https://assets.codepen.io/5525772/cementwall.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsl(0, 2%, 83%);
+}
+.cement {
+    background-image: url("https://assets.codepen.io/5525772/cement.png");
+}
+.earth {
+    color: white;
+    background-image: url("https://assets.codepen.io/5525772/earthsymbol100.png");
+}
+.cement:hover,
+.earth:hover,
+.tree:hover {
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+@media (prefers-reduced-motion) {
+    .cement:hover,
+    .earth:hover,
+    .tree:hover{
+        transition-duration: 0s;
+        background-position:left;
+        text-align: left;
+    }
+  }
