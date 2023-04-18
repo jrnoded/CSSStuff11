@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    color: yellow;
+}
+.bee {
+    position: relative;
+}
+.bee .body {
+    width: 200px;
+    aspect-ratio: 1.7 / 1;
+    border-radius: 100%;
+    border: 1px solid black;
+    background-image: linear-gradient(
+        90deg,
+        yellow 0% 20%,
+        black 20% 40%,
+        yellow 40% 60%,
+        black 60% 80%,
+        yellow 80% 100%
+    );
+    z-index: 3;
+
+}
+.bee .body::before {
+    content: "B";
+    left: 40px;
+    font-size: 14rem;
+    top: -8rem;
+    transform: rotate(-85deg);
+    position: absolute;
+    -webkit-text-stroke: 2px black;
+    z-index: -1;
+}
+.bee .body::after {
+    content: "W";
+    position: absolute;
+    top: 2rem;
+    left: 30px;
+    font-size: 10rem;
+    -webkit-text-stroke: 2px black;
+    z-index: -1;
+}
+.bee .head {
+    width: 75px;
+    aspect-ratio: 1 / 1;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    left: -65px;
+}
+.bee .head::before {
+    content: "o";
+    font-size: 2rem;
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    border-radius: 50%;
+    width: 35px;
+    aspect-ratio: 1 / 1;
+    background: yellow;
+    color: black;
+    z-index: 2;
+}
+
+.bee .head::after {
+    content: "p";
+    position: absolute;
+    left: -10px;
+    top: 1rem;
+    font-size: 4rem;
+    transform: rotate(20deg);
+    -webkit-text-stroke: 2px black;
+    z-index: -1;
+}
