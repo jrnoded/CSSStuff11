@@ -1,22 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-
+* {
+    box-sizing: border-box;
+}
 body {
-    background-image: url("https://assets.codepen.io/5525772/floralbkg.png");
-    background-size: 150px;
-    display: grid;
-    place-content: center;
-    min-height: 100vh;
-    font-family: 'Lobster', cursive;
+  background-image: url("https://assets.codepen.io/5525772/floralbkg.png");
+  background-size: 150px;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
 }
 .message {
-    width: 50vw;
-    aspect-ratio: 1 / 1;
-    border: 3px ridge pink;
-    border-radius: 1rem;
-    backdrop-filter: blur(5px);
+  width: 60vw;
+  aspect-ratio: 1 / 1;
+  border: 3px ridge pink;
+  border-radius: 1rem;
+  background: hsla(350, 100%, 88%, 0.75);
+  backdrop-filter: blur(5px);
+  font-family: sans-serif;
 }
 h2 {
-    text-align:center;
-    font-size: 2rem;
-  }
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Lobster", cursive;
+}
+
+.flowers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rant {
+  margin: 30px;
+  padding: 20px;
+}
