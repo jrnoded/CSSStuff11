@@ -1,9 +1,17 @@
 * {
     box-sizing: border-box;
 }
-
+:root {
+    --anglebkg: -45deg;
+    --lightclr: hsl(0, 0%, 100%);
+    --darkclr: hsl(0, 0%, 90%);
+}
 body {
     margin: 0;
     min-height: 100vh;
-    background: repeating-linear-gradient(-45deg, #fff 0 20px, #f9f9f9 0 40px)
+    background: repeating-linear-gradient(
+        var(--anglebkg),
+        var(--lightclr) 0 20px,
+        var(--darkclr) 0 40px
+    );
 }
