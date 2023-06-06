@@ -1,0 +1,78 @@
+body {
+    background-color: floralwhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.toggle [aria-pressed] {
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    color: inherit;
+    background: none;
+    font: inherit;
+    line-height: inherit;
+    text-align: left;
+    padding: 0.5rem 0 0 4rem;
+    position: relative;
+}
+
+.toggle [aria-pressed]::before,
+.toggle [aria-pressed]::after {
+    content: "";
+    position: absolute;
+    height: 1.5rem;
+    transition: all 0.25s ease;
+}
+
+.toggle [aria-pressed]::before {
+    left: 0;
+    top: 0.2rem;
+    width: 3rem;
+    border: 0.2rem solid #767676;
+    background: #767676;
+    border-radius: 1.1rem;
+}
+
+.toggle [aria-pressed]::after {
+    left: 0;
+    top: 0.25rem;
+    background-color: #fff;
+    background-position: center center;
+    border-radius: 50%;
+    width: 1.5rem;
+    border: 0.15rem solid #767676;
+}
+
+.toggle [aria-pressed="true"]::after {
+    left: 1.6rem;
+    border-color: #36a829;
+    color: #36a829;
+}
+
+.toggle [aria-pressed="true"]::before {
+    background-color: #36a829;
+    border-color: #36a829;
+}
+
+#pudialog {
+    position: absolute;
+    top: -20rem;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  }
+#pudialog h2 {
+    text-align: center;
+}
