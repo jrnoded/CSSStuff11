@@ -1,7 +1,9 @@
 const showrange = document.getElementById("showrange");
-const valuerange = document.getElementById("valuerange")
+const valuerange = document.getElementById("valuerange");
+const rank = document.getElementById("rank");
 
 function sliderChange(value) {
     valuerange.innerHTML = value;
-    showrange.style.transform = `rotate(${value}deg)`
+	rank.innerHTML = value;
+    showrange.style.transform = `rotate(${value}deg)`;
 }
