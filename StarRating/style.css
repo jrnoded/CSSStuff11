@@ -18,7 +18,7 @@ body {
 }
 #container {
     /* background-color: gold; */
-    --pc: 20%;
+    --pc: 0%;
     background: linear-gradient(var(--dir), var(--fill) 0%, var(--fill) var(--pc), var(--bgcolor)var(--pc));
     background-clip: text;
     -webkit-background-clip: text;
