@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess the Color</title>
+</head>
+
+<body>
+    <div class="explain">
+        <p>Rules:</p>
+        <p>
+            Use the sliders to adjust the color of the bottom panel to match
+            the color of the top panel.
+        </p>
+        <p>
+            When you think you have a match click the check box to see if
+            you are a winner.
+        </p>
+        <p>Hints:</p>
+        <ul>
+            <li>
+                You can use the left and right arrow keys to adjust the
+                color by a single step.
+            </li>
+            <li>
+                If you get stuck try hovering the cursor over the top panel
+                but that is kind of cheating.
+            </li>
+        </ul>
+    </div>
+    <main>
+        <div class="container">
+            <h2>How good is your eye?</h2>
+            <div class="box" id="randomclr">
+                <h2 id="winner">Winner</h2>
+                <p id="randomrgb">RGB</p>
+            </div>
+            <div class="box" id="guessclr">
+                <div class="values">
+                    <p id="guessrgb">RGB</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="ranges">
+            <input class="ranger" id="red" name="red" type="range" min="0" max="250" steps="1" value="128" list="values"
+                onchange="setRange(this)" />
+
+            <input class="ranger" id="green" name="green" type="range" min="0" max="250" steps="1" value="128"
+                list="values" onchange="setRange(this)" />
+
+            <input class="ranger" id="blue" name="blue" type="range" min="0" max="250" steps="1" value="128"
+                list="values" onchange="setRange(this)" />
+
+            <datalist id="values">
+                <option value="0" label="0"></option>
+                <option value="32" label="32"></option>
+                <option value="64" label="64"></option>
+                <option value="96" label="96"></option>
+                <option value="128" label="128"></option>
+                <option value="160" label="160"></option>
+                <option value="192" label="192"></option>
+                <option value="224" label="226"></option>
+                <option value="255" label="255"></option>
+            </datalist>
+        </div>
+        <div class="buttons">
+            <button onclick="checkRange();">Check</button>
+            <!-- <button>Clue</button> -->
+            <button onclick="newRandomColor();">Reset</button>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
